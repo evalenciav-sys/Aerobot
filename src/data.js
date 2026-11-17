@@ -1,0 +1,1845 @@
+// AEROBOT V5: currículo pedagógico de 40 misiones (10 básicas, 10 intermedias, 20 avanzadas).
+export const lessons = [
+  {
+    "title": "Hola, Python",
+    "topic": "print()",
+    "level": "Básico",
+    "desc": "print() sirve para mostrar palabras o números en la consola.",
+    "goal": "Muestra exactamente: Hola, mundo",
+    "starter": "print()",
+    "learn": {
+      "intro": "print() sirve para mostrar palabras o números en la consola.",
+      "syntax": "print(\"Tu mensaje\")",
+      "example": "print(\"¡Despegue!\")",
+      "why": "print es el comando, las comillas guardan el texto y los paréntesis lo rodean.",
+      "steps": [
+        "Escribe print y abre paréntesis.",
+        "Pon Hola, mundo entre comillas.",
+        "Cierra el paréntesis y pruébalo."
+      ]
+    },
+    "hint": "El texto va entre comillas dentro de print().",
+    "check": {
+      "type": "output",
+      "value": "Hola, mundo"
+    }
+  },
+  {
+    "title": "Un mensaje espacial",
+    "topic": "Textos",
+    "level": "Básico",
+    "desc": "Para escribir un mensaje se usan comillas dobles o simples.",
+    "goal": "Muestra exactamente: Misión lista",
+    "starter": "print()",
+    "learn": {
+      "intro": "Para escribir un mensaje se usan comillas dobles o simples.",
+      "syntax": "print(\"Texto que quiero ver\")",
+      "example": "print(\"Bienvenido\")",
+      "why": "Solo aparece el texto entre las comillas; las comillas no se muestran.",
+      "steps": [
+        "Escribe un print().",
+        "Dentro escribe Misión lista entre comillas."
+      ]
+    },
+    "hint": "Revisa las mayúsculas y las comillas.",
+    "check": {
+      "type": "output",
+      "value": "Misión lista"
+    }
+  },
+  {
+    "title": "Un número en pantalla",
+    "topic": "Números",
+    "level": "Básico",
+    "desc": "Los números se pueden mostrar sin comillas.",
+    "goal": "Muestra el número 8.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Los números se pueden mostrar sin comillas.",
+      "syntax": "print(numero)",
+      "example": "print(42)",
+      "why": "Si no pones comillas, Python reconoce un número con el que puede calcular.",
+      "steps": [
+        "Escribe print().",
+        "Coloca el número 8 dentro de los paréntesis."
+      ]
+    },
+    "hint": "Los números no necesitan comillas.",
+    "check": {
+      "type": "output",
+      "value": "8"
+    }
+  },
+  {
+    "title": "Sumemos estrellas",
+    "topic": "Suma +",
+    "level": "Básico",
+    "desc": "El símbolo + sirve para sumar dos números.",
+    "goal": "Muestra el resultado de sumar 4 + 6.",
+    "starter": "print()",
+    "learn": {
+      "intro": "El símbolo + sirve para sumar dos números.",
+      "syntax": "print(numero1 + numero2)",
+      "example": "print(2 + 3)",
+      "why": "Python realiza la operación antes de mostrar el resultado.",
+      "steps": [
+        "Pon una suma dentro de print().",
+        "Usa los números 4 y 6."
+      ]
+    },
+    "hint": "Usa + entre los números, no escribas únicamente la respuesta.",
+    "check": {
+      "type": "output",
+      "value": "10",
+      "requires": [
+        "+"
+      ]
+    }
+  },
+  {
+    "title": "Batería restante",
+    "topic": "Resta -",
+    "level": "Básico",
+    "desc": "Para quitar una cantidad a otra usamos el símbolo -.",
+    "goal": "Muestra el resultado de restar 15 - 4.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Para quitar una cantidad a otra usamos el símbolo -.",
+      "syntax": "print(numero1 - numero2)",
+      "example": "print(9 - 2)",
+      "why": "La resta se calcula antes de enseñar el número final.",
+      "steps": [
+        "Coloca una resta dentro de print().",
+        "Utiliza 15 y 4."
+      ]
+    },
+    "hint": "En una resta el orden sí cambia el resultado.",
+    "check": {
+      "type": "output",
+      "value": "11",
+      "requires": [
+        "-"
+      ]
+    }
+  },
+  {
+    "title": "Multiplica tu energía",
+    "topic": "Multiplicación *",
+    "level": "Básico",
+    "desc": "En Python usamos * para multiplicar, no la letra x.",
+    "goal": "Muestra el resultado de multiplicar 3 por 5.",
+    "starter": "print()",
+    "learn": {
+      "intro": "En Python usamos * para multiplicar, no la letra x.",
+      "syntax": "print(numero1 * numero2)",
+      "example": "print(4 * 2)",
+      "why": "El asterisco * hace la multiplicación de los dos valores.",
+      "steps": [
+        "Coloca 3 y 5 dentro de print().",
+        "Únelos con * y ejecuta."
+      ]
+    },
+    "hint": "Busca el símbolo * en tu teclado.",
+    "check": {
+      "type": "output",
+      "value": "15",
+      "requires": [
+        "*"
+      ]
+    }
+  },
+  {
+    "title": "Una cajita llamada energia",
+    "topic": "Variables",
+    "level": "Básico",
+    "desc": "Una variable es una cajita que guarda un valor con un nombre.",
+    "goal": "Crea la variable energia con el valor 20 y muestra su contenido.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Una variable es una cajita que guarda un valor con un nombre.",
+      "syntax": "nombre = valor\nprint(nombre)",
+      "example": "monedas = 9\nprint(monedas)",
+      "why": "El signo = guarda el dato. Luego puedes usar su nombre para leerlo.",
+      "steps": [
+        "Escribe energia = 20.",
+        "En otra línea usa print(energia)."
+      ]
+    },
+    "hint": "El nombre de tu variable debe ser energia, sin comillas al imprimir.",
+    "check": {
+      "type": "variable",
+      "name": "energia",
+      "value": 20,
+      "output": "20",
+      "requires": [
+        "energia"
+      ]
+    }
+  },
+  {
+    "title": "Nombre de tu robot",
+    "topic": "Variables de texto",
+    "level": "Básico",
+    "desc": "Una variable también puede guardar palabras si usas comillas.",
+    "goal": "Guarda Luna en una variable llamada piloto y muestra su contenido.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Una variable también puede guardar palabras si usas comillas.",
+      "syntax": "nombre = \"texto\"\nprint(nombre)",
+      "example": "mascota = \"Pixel\"\nprint(mascota)",
+      "why": "La palabra se guarda entre comillas, pero el nombre de la variable no.",
+      "steps": [
+        "Crea piloto y guarda Luna como texto.",
+        "Muestra piloto con print()."
+      ]
+    },
+    "hint": "Escribe comillas al guardar Luna, no al imprimir piloto.",
+    "check": {
+      "type": "variable",
+      "name": "piloto",
+      "value": "Luna",
+      "output": "Luna",
+      "requires": [
+        "piloto"
+      ]
+    }
+  },
+  {
+    "title": "Actualiza tus puntos",
+    "topic": "Cambiar variables",
+    "level": "Básico",
+    "desc": "Puedes cambiar lo que contiene una variable durante tu programa.",
+    "goal": "Guarda 10 en puntos, súmale 5 y muestra 15.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Puedes cambiar lo que contiene una variable durante tu programa.",
+      "syntax": "puntos = 3\npuntos = puntos + 2\nprint(puntos)",
+      "example": "vidas = 2\nvidas = vidas + 1\nprint(vidas)",
+      "why": "Primero guardas un valor; luego usas la misma variable para actualizarlo.",
+      "steps": [
+        "Crea puntos con valor 10.",
+        "Súmale 5 a esa variable.",
+        "Muestra su nuevo valor."
+      ]
+    },
+    "hint": "Intenta usar puntos = puntos + 5.",
+    "check": {
+      "type": "output",
+      "value": "15",
+      "requires": [
+        "puntos",
+        "+"
+      ]
+    }
+  },
+  {
+    "title": "Mensaje con un número",
+    "topic": "Texto y números",
+    "level": "Básico",
+    "desc": "print() puede mostrar palabras y variables juntas, separándolas por comas.",
+    "goal": "Guarda edad = 12 y muestra: Tengo 12 años",
+    "starter": "print()",
+    "learn": {
+      "intro": "print() puede mostrar palabras y variables juntas, separándolas por comas.",
+      "syntax": "print(\"Texto\", variable, \"texto\")",
+      "example": "nivel = 4\nprint(\"Voy en el nivel\", nivel)",
+      "why": "Cuando separas elementos con comas, print añade un espacio entre ellos.",
+      "steps": [
+        "Guarda el número 12 en una variable edad.",
+        "Muestra Tengo, edad y años en el mismo print."
+      ]
+    },
+    "hint": "Puedes colocar varios elementos separados por comas dentro de print().",
+    "check": {
+      "type": "output",
+      "value": "Tengo 12 años",
+      "requires": [
+        "edad"
+      ]
+    }
+  },
+  {
+    "title": "Saluda a quien escriba",
+    "topic": "input()",
+    "level": "Intermedio",
+    "desc": "input() permite que quien usa el programa escriba un dato.",
+    "goal": "Pide un nombre y muestra Hola seguido de ese nombre. Ejemplo: para Ada, Hola Ada.",
+    "starter": "print()",
+    "learn": {
+      "intro": "input() permite que quien usa el programa escriba un dato.",
+      "syntax": "dato = input()\nprint(dato)",
+      "example": "color = input()\nprint(\"Color:\", color)",
+      "why": "input() espera texto. Guárdalo en una variable para usarlo después.",
+      "steps": [
+        "Pide el nombre con input().",
+        "Muestra Hola y el nombre recibido."
+      ]
+    },
+    "hint": "Usa input() para que funcione con cualquier nombre.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "Ada"
+          ],
+          "output": "Hola Ada"
+        },
+        {
+          "inputs": [
+            "Luis"
+          ],
+          "output": "Hola Luis"
+        },
+        {
+          "inputs": [
+            "Luna"
+          ],
+          "output": "Hola Luna"
+        }
+      ],
+      "requires": [
+        "input("
+      ]
+    },
+    "inputLabels": [
+      "Nombre"
+    ]
+  },
+  {
+    "title": "Suma dos datos",
+    "topic": "int() + input()",
+    "level": "Intermedio",
+    "desc": "input() trae texto; int() lo transforma en un número entero.",
+    "goal": "Pide dos números enteros y muestra su suma. No escribas el resultado fijo.",
+    "starter": "print()",
+    "learn": {
+      "intro": "input() trae texto; int() lo transforma en un número entero.",
+      "syntax": "numero = int(input())\nprint(numero)",
+      "example": "edad = int(input())\nprint(edad + 1)",
+      "why": "Si no conviertes el texto a número, no podrás sumarlo como esperas.",
+      "steps": [
+        "Pide y convierte el primer número.",
+        "Pide y convierte el segundo.",
+        "Súmalos y muestra el resultado."
+      ]
+    },
+    "hint": "Usa int(input()) dos veces y después el signo +.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "2",
+            "3"
+          ],
+          "output": "5"
+        },
+        {
+          "inputs": [
+            "10",
+            "-2"
+          ],
+          "output": "8"
+        },
+        {
+          "inputs": [
+            "0",
+            "7"
+          ],
+          "output": "7"
+        }
+      ],
+      "requires": [
+        "input(",
+        "int("
+      ]
+    },
+    "inputLabels": [
+      "Número 1",
+      "Número 2"
+    ]
+  },
+  {
+    "title": "El doble de un número",
+    "topic": "Multiplicar un dato",
+    "level": "Intermedio",
+    "desc": "Si multiplicas un número por 2 obtienes su doble.",
+    "goal": "Pide un número entero y muestra su doble.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Si multiplicas un número por 2 obtienes su doble.",
+      "syntax": "n = int(input())\nprint(n * cantidad)",
+      "example": "n = int(input())\nprint(n * 3)",
+      "why": "El ejemplo multiplica por 3; tú tendrás que elegir otro factor.",
+      "steps": [
+        "Pide un número entero.",
+        "Multiplícalo por 2.",
+        "Muestra lo que obtuviste."
+      ]
+    },
+    "hint": "Recuerda que el doble significa multiplicar por 2.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "4"
+          ],
+          "output": "8"
+        },
+        {
+          "inputs": [
+            "-3"
+          ],
+          "output": "-6"
+        },
+        {
+          "inputs": [
+            "0"
+          ],
+          "output": "0"
+        }
+      ],
+      "requires": [
+        "input("
+      ]
+    },
+    "inputLabels": [
+      "Número"
+    ]
+  },
+  {
+    "title": "Cambia el signo",
+    "topic": "Números negativos",
+    "level": "Intermedio",
+    "desc": "Un número puede cambiar de positivo a negativo usando el signo - delante.",
+    "goal": "Pide un número entero y muestra su opuesto. Por ejemplo, de 7 sale -7.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Un número puede cambiar de positivo a negativo usando el signo - delante.",
+      "syntax": "opuesto = -numero",
+      "example": "n = 8\nprint(-n)",
+      "why": "Si el número ya es negativo, al negarlo se vuelve positivo.",
+      "steps": [
+        "Pide un entero con int(input()).",
+        "Cambia su signo y muéstralo."
+      ]
+    },
+    "hint": "Piensa en el signo - delante de la variable.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "7"
+          ],
+          "output": "-7"
+        },
+        {
+          "inputs": [
+            "-4"
+          ],
+          "output": "4"
+        },
+        {
+          "inputs": [
+            "0"
+          ],
+          "output": "0"
+        }
+      ],
+      "requires": [
+        "input("
+      ]
+    },
+    "inputLabels": [
+      "Número"
+    ]
+  },
+  {
+    "title": "¿Par o impar?",
+    "topic": "if / else",
+    "level": "Intermedio",
+    "desc": "if elige qué hacer; else indica qué hacer cuando la condición no se cumple.",
+    "goal": "Pide un entero. Muestra Par si es par o Impar si no lo es.",
+    "starter": "print()",
+    "learn": {
+      "intro": "if elige qué hacer; else indica qué hacer cuando la condición no se cumple.",
+      "syntax": "if condicion:\n    print(\"Sí\")\nelse:\n    print(\"No\")",
+      "example": "puntos = 8\nif puntos > 5:\n    print(\"Alto\")\nelse:\n    print(\"Bajo\")",
+      "why": "Debajo de if y else debes dejar cuatro espacios antes de la instrucción.",
+      "steps": [
+        "Pide el número.",
+        "Revisa si su resto al dividir entre 2 es cero.",
+        "Usa if y else para mostrar el mensaje."
+      ]
+    },
+    "hint": "El operador % te dice el resto: número % 2.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "2"
+          ],
+          "output": "Par"
+        },
+        {
+          "inputs": [
+            "7"
+          ],
+          "output": "Impar"
+        },
+        {
+          "inputs": [
+            "0"
+          ],
+          "output": "Par"
+        },
+        {
+          "inputs": [
+            "-3"
+          ],
+          "output": "Impar"
+        }
+      ],
+      "requires": [
+        "input(",
+        "if ",
+        "else:"
+      ]
+    },
+    "inputLabels": [
+      "Número"
+    ]
+  },
+  {
+    "title": "¿Cuál es mayor?",
+    "topic": "Comparaciones",
+    "level": "Intermedio",
+    "desc": "Puedes comparar números con >, < o ==.",
+    "goal": "Pide dos números enteros y muestra el mayor de ellos.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Puedes comparar números con >, < o ==.",
+      "syntax": "if a > b:\n    print(a)\nelse:\n    print(b)",
+      "example": "a = 10\nb = 4\nif a < b:\n    print(\"Primero menor\")\nelse:\n    print(\"Primero no menor\")",
+      "why": "Los signos > y < sirven para elegir entre dos valores.",
+      "steps": [
+        "Pide dos números enteros.",
+        "Compara los valores.",
+        "Muestra el número más grande."
+      ]
+    },
+    "hint": "¿Qué condición puedes escribir con >?",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "5",
+            "9"
+          ],
+          "output": "9"
+        },
+        {
+          "inputs": [
+            "14",
+            "-1"
+          ],
+          "output": "14"
+        },
+        {
+          "inputs": [
+            "3",
+            "3"
+          ],
+          "output": "3"
+        }
+      ],
+      "requires": [
+        "input(",
+        "if "
+      ]
+    },
+    "inputLabels": [
+      "Número A",
+      "Número B"
+    ]
+  },
+  {
+    "title": "Acceso a la estación",
+    "topic": "Decisiones",
+    "level": "Intermedio",
+    "desc": "En una condición, >= significa mayor o igual que.",
+    "goal": "Pide una edad. Si es 12 o más muestra Adelante; si no, Espera.",
+    "starter": "print()",
+    "learn": {
+      "intro": "En una condición, >= significa mayor o igual que.",
+      "syntax": "if edad >= limite:\n    print(\"Puedes\")\nelse:\n    print(\"Todavía no\")",
+      "example": "monedas = 3\nif monedas >= 5:\n    print(\"Premio\")\nelse:\n    print(\"Sigue jugando\")",
+      "why": "Python revisa la condición y ejecuta solo el bloque correspondiente.",
+      "steps": [
+        "Pide la edad y conviértela a entero.",
+        "Usa >= para compararla con 12.",
+        "Muestra el mensaje correspondiente."
+      ]
+    },
+    "hint": "Recuerda incluir el caso donde la edad es igual a 12.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "12"
+          ],
+          "output": "Adelante"
+        },
+        {
+          "inputs": [
+            "8"
+          ],
+          "output": "Espera"
+        },
+        {
+          "inputs": [
+            "17"
+          ],
+          "output": "Adelante"
+        }
+      ],
+      "requires": [
+        "input(",
+        "if "
+      ]
+    },
+    "inputLabels": [
+      "Edad"
+    ]
+  },
+  {
+    "title": "Cuenta cinco pasos",
+    "topic": "for y range()",
+    "level": "Intermedio",
+    "desc": "for repite instrucciones; range() indica los números que recorrerá.",
+    "goal": "Muestra los números del 1 al 5, uno por línea, usando for.",
+    "starter": "print()",
+    "learn": {
+      "intro": "for repite instrucciones; range() indica los números que recorrerá.",
+      "syntax": "for i in range(inicio, final):\n    print(i)",
+      "example": "for i in range(1, 4):\n    print(i)",
+      "why": "range no incluye el final: range(1,4) termina en 3.",
+      "steps": [
+        "Crea un ciclo for.",
+        "Elige un range que recorra del 1 al 5.",
+        "Imprime el contador en cada vuelta."
+      ]
+    },
+    "hint": "El límite final de range debe ser uno más grande.",
+    "check": {
+      "type": "output",
+      "value": "1\n2\n3\n4\n5",
+      "requires": [
+        "for ",
+        "range("
+      ]
+    }
+  },
+  {
+    "title": "Tabla del tres",
+    "topic": "Ciclos con operaciones",
+    "level": "Intermedio",
+    "desc": "Puedes combinar un ciclo con una operación matemática.",
+    "goal": "Muestra 3, 6, 9, 12 y 15 en líneas separadas usando for.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Puedes combinar un ciclo con una operación matemática.",
+      "syntax": "for i in range(1, 4):\n    print(i * 2)",
+      "example": "for i in range(1, 4):\n    print(i * 5)",
+      "why": "En cada vuelta i cambia; por eso el resultado de la multiplicación también cambia.",
+      "steps": [
+        "Haz un ciclo con cinco vueltas.",
+        "Multiplica el contador por 3.",
+        "Imprime el resultado de cada vuelta."
+      ]
+    },
+    "hint": "Utiliza range(1, 6) y multiplica por 3.",
+    "check": {
+      "type": "output",
+      "value": "3\n6\n9\n12\n15",
+      "requires": [
+        "for ",
+        "*"
+      ]
+    }
+  },
+  {
+    "title": "Visita el segundo planeta",
+    "topic": "Listas",
+    "level": "Intermedio",
+    "desc": "Una lista guarda elementos en orden. La primera posición es 0.",
+    "goal": "Crea la lista planetas con Luna, Marte y Venus, y muestra Marte usando su posición.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Una lista guarda elementos en orden. La primera posición es 0.",
+      "syntax": "lista = [\"A\", \"B\", \"C\"]\nprint(lista[0])",
+      "example": "comida = [\"Pan\", \"Taco\", \"Fruta\"]\nprint(comida[2])",
+      "why": "Para acceder al segundo elemento de una lista, utilizas la posición 1.",
+      "steps": [
+        "Crea una lista llamada planetas.",
+        "Guarda Luna, Marte y Venus, en ese orden.",
+        "Imprime el elemento de la posición 1."
+      ]
+    },
+    "hint": "Los índices comienzan en cero, así que el segundo tiene índice 1.",
+    "check": {
+      "type": "output",
+      "value": "Marte",
+      "requires": [
+        "planetas",
+        "["
+      ]
+    }
+  },
+  {
+    "title": "Mini calculadora",
+    "topic": "Operadores y elif",
+    "level": "Avanzado",
+    "desc": "if/elif/else permite escoger entre varias operaciones.",
+    "goal": "Pide dos números y luego +, -, * o /. Muestra el resultado. Si divides entre cero, muestra Indefinido.",
+    "starter": "print()",
+    "learn": {
+      "intro": "if/elif/else permite escoger entre varias operaciones.",
+      "syntax": "if opcion == \"A\":\n    print(\"Opción A\")\nelif opcion == \"B\":\n    print(\"Opción B\")\nelse:\n    print(\"Otra\")",
+      "example": "animal = \"gato\"\nif animal == \"gato\":\n    print(\"Miau\")\nelif animal == \"perro\":\n    print(\"Guau\")",
+      "why": "Cada condición sirve para un símbolo de operación diferente. Antes de dividir, comprueba el cero.",
+      "steps": [
+        "Pide ambos números con float(input()).",
+        "Pide el símbolo de la operación.",
+        "Usa if/elif para operar; no dividas entre cero."
+      ]
+    },
+    "hint": "Recuerda: suma +, resta -, multiplica * y divide /.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "8",
+            "7",
+            "+"
+          ],
+          "output": "15"
+        },
+        {
+          "inputs": [
+            "9",
+            "4",
+            "-"
+          ],
+          "output": "5"
+        },
+        {
+          "inputs": [
+            "3",
+            "6",
+            "*"
+          ],
+          "output": "18"
+        },
+        {
+          "inputs": [
+            "10",
+            "4",
+            "/"
+          ],
+          "output": "2.5"
+        },
+        {
+          "inputs": [
+            "4",
+            "0",
+            "/"
+          ],
+          "output": "Indefinido"
+        }
+      ],
+      "requires": [
+        "input(",
+        "if "
+      ]
+    },
+    "inputLabels": [
+      "Número A",
+      "Número B",
+      "Operación"
+    ]
+  },
+  {
+    "title": "De Celsius a Fahrenheit",
+    "topic": "Fórmulas",
+    "level": "Avanzado",
+    "desc": "Una variable puede guardar el resultado de una fórmula.",
+    "goal": "Pide una temperatura en Celsius y muestra su valor en Fahrenheit. Fórmula: C × 9/5 + 32.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Una variable puede guardar el resultado de una fórmula.",
+      "syntax": "resultado = valor * factor + ajuste",
+      "example": "metros = 3\ncentimetros = metros * 100\nprint(centimetros)",
+      "why": "La fórmula tiene multiplicación, división y suma. Respeta el orden.",
+      "steps": [
+        "Pide los grados con float(input()).",
+        "Aplica la fórmula dada.",
+        "Imprime el resultado numérico."
+      ]
+    },
+    "hint": "Primero multiplica por 9, divide por 5 y suma 32.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "0"
+          ],
+          "output": "32"
+        },
+        {
+          "inputs": [
+            "100"
+          ],
+          "output": "212"
+        },
+        {
+          "inputs": [
+            "-40"
+          ],
+          "output": "-40"
+        }
+      ],
+      "requires": [
+        "input(",
+        "*",
+        "/"
+      ]
+    },
+    "inputLabels": [
+      "Celsius"
+    ]
+  },
+  {
+    "title": "Área del triángulo",
+    "topic": "Fórmulas geométricas",
+    "level": "Avanzado",
+    "desc": "Puedes guardar cálculos con decimales usando float().",
+    "goal": "Pide base y altura. Muestra el área del triángulo: base × altura / 2.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Puedes guardar cálculos con decimales usando float().",
+      "syntax": "dato = float(input())\nresultado = dato / 2",
+      "example": "lado = float(input())\nprint(lado * lado)",
+      "why": "La multiplicación usa * y la división usa /.",
+      "steps": [
+        "Pide base y altura con float(input()).",
+        "Multiplica los dos números.",
+        "Divide entre 2 e imprime."
+      ]
+    },
+    "hint": "Una figura distinta como el cuadrado usa otra fórmula.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "4",
+            "3"
+          ],
+          "output": "6"
+        },
+        {
+          "inputs": [
+            "10",
+            "5"
+          ],
+          "output": "25"
+        },
+        {
+          "inputs": [
+            "2.5",
+            "4"
+          ],
+          "output": "5"
+        }
+      ],
+      "requires": [
+        "input(",
+        "*",
+        "/"
+      ]
+    },
+    "inputLabels": [
+      "Base",
+      "Altura"
+    ]
+  },
+  {
+    "title": "Promedio de calificaciones",
+    "topic": "Promedios",
+    "level": "Avanzado",
+    "desc": "El promedio es la suma de todos los valores dividida entre su cantidad.",
+    "goal": "Pide tres calificaciones y muestra su promedio con dos decimales.",
+    "starter": "print()",
+    "learn": {
+      "intro": "El promedio es la suma de todos los valores dividida entre su cantidad.",
+      "syntax": "print(f\"{resultado:.2f}\")",
+      "example": "precio = 7 / 3\nprint(f\"{precio:.2f}\")",
+      "why": ":.2f deja exactamente dos números después del punto.",
+      "steps": [
+        "Pide tres números.",
+        "Súmalos y divide entre 3.",
+        "Muestra dos decimales."
+      ]
+    },
+    "hint": "Usa formato :.2f para que aparezcan dos decimales.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "8",
+            "9",
+            "10"
+          ],
+          "output": "9.00"
+        },
+        {
+          "inputs": [
+            "7",
+            "8",
+            "8"
+          ],
+          "output": "7.67"
+        },
+        {
+          "inputs": [
+            "10",
+            "10",
+            "10"
+          ],
+          "output": "10.00"
+        }
+      ],
+      "requires": [
+        "input("
+      ]
+    },
+    "inputLabels": [
+      "Calificación 1",
+      "Calificación 2",
+      "Calificación 3"
+    ]
+  },
+  {
+    "title": "Palabra al revés",
+    "topic": "Rebanadas [::-1]",
+    "level": "Avanzado",
+    "desc": "Puedes recorrer una cadena desde el último carácter usando [::-1].",
+    "goal": "Pide un texto y muéstralo al revés.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Puedes recorrer una cadena desde el último carácter usando [::-1].",
+      "syntax": "texto_al_reves = texto[::-1]",
+      "example": "palabra = \"sol\"\nprint(palabra[::-1])",
+      "why": "Los corchetes con ::-1 invierten el orden de las letras.",
+      "steps": [
+        "Pide una palabra o frase.",
+        "Invierte sus caracteres.",
+        "Muestra el resultado."
+      ]
+    },
+    "hint": "La pista está en usar [::-1].",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "robot"
+          ],
+          "output": "tobor"
+        },
+        {
+          "inputs": [
+            "Python"
+          ],
+          "output": "nohtyP"
+        },
+        {
+          "inputs": [
+            "hola mundo"
+          ],
+          "output": "odnum aloh"
+        }
+      ],
+      "requires": [
+        "input("
+      ]
+    },
+    "inputLabels": [
+      "Texto"
+    ]
+  },
+  {
+    "title": "Cazador de vocales",
+    "topic": "Recorrer texto",
+    "level": "Avanzado",
+    "desc": "Puedes recorrer cada letra con for y verificar si está dentro de un texto.",
+    "goal": "Pide una frase y muestra cuántas vocales (a, e, i, o, u) contiene, sin distinguir mayúsculas.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Puedes recorrer cada letra con for y verificar si está dentro de un texto.",
+      "syntax": "for letra in texto:\n    if letra in \"abc\":\n        print(letra)",
+      "example": "palabra = \"luz\"\nfor letra in palabra:\n    if letra in \"lz\":\n        print(letra)",
+      "why": "lower() convierte todo a minúsculas antes de revisar.",
+      "steps": [
+        "Pide una frase y pásala a minúsculas.",
+        "Recorre sus letras con for.",
+        "Cuenta las vocales e imprime la cantidad."
+      ]
+    },
+    "hint": "Comprueba si cada letra aparece en aeiuo.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "Hola"
+          ],
+          "output": "2"
+        },
+        {
+          "inputs": [
+            "Murcielago"
+          ],
+          "output": "5"
+        },
+        {
+          "inputs": [
+            "BCDF"
+          ],
+          "output": "0"
+        }
+      ],
+      "requires": [
+        "input(",
+        "for "
+      ]
+    },
+    "inputLabels": [
+      "Frase"
+    ]
+  },
+  {
+    "title": "Detector de palíndromos",
+    "topic": "Comparar cadenas",
+    "level": "Avanzado",
+    "desc": "Un palíndromo se lee igual de izquierda a derecha y al revés.",
+    "goal": "Pide una palabra o frase. Ignora espacios y mayúsculas; muestra Si si se lee igual al revés y No si no.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Un palíndromo se lee igual de izquierda a derecha y al revés.",
+      "syntax": "limpio = texto.lower().replace(\" \", \"\")\nprint(limpio[::-1])",
+      "example": "nombre = \"Ana\"\nprint(nombre.lower().replace(\" \", \"\"))",
+      "why": "Primero limpia el texto; después compáralo con su versión invertida.",
+      "steps": [
+        "Pide texto con input().",
+        "Quítale espacios y convierte a minúsculas.",
+        "Compara con su inverso y escribe Si o No."
+      ]
+    },
+    "hint": "Recuerda que Si se escribe sin acento para esta misión.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "Ana"
+          ],
+          "output": "Si"
+        },
+        {
+          "inputs": [
+            "anita lava la tina"
+          ],
+          "output": "Si"
+        },
+        {
+          "inputs": [
+            "Robbi"
+          ],
+          "output": "No"
+        }
+      ],
+      "requires": [
+        "input(",
+        "if "
+      ]
+    },
+    "inputLabels": [
+      "Texto"
+    ]
+  },
+  {
+    "title": "El número más grande",
+    "topic": "Listas y max()",
+    "level": "Avanzado",
+    "desc": "split(\",\") separa texto por comas; int() transforma cada parte.",
+    "goal": "Pide números separados por comas y muestra el mayor. Ejemplo de entrada: 3,9,2.",
+    "starter": "print()",
+    "learn": {
+      "intro": "split(\",\") separa texto por comas; int() transforma cada parte.",
+      "syntax": "partes = texto.split(\",\")\nnumeros = [int(x) for x in partes]",
+      "example": "datos = \"4,2,7\"\nprint(datos.split(\",\"))",
+      "why": "max() encuentra el elemento mayor de una colección de números.",
+      "steps": [
+        "Pide los números como texto.",
+        "Sepáralos por comas y conviértelos.",
+        "Busca el mayor y muéstralo."
+      ]
+    },
+    "hint": "split(\",\") divide cada número; max() encuentra el mayor.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "3,9,2"
+          ],
+          "output": "9"
+        },
+        {
+          "inputs": [
+            "-5,-2,-8"
+          ],
+          "output": "-2"
+        },
+        {
+          "inputs": [
+            "7,7,1"
+          ],
+          "output": "7"
+        }
+      ],
+      "requires": [
+        "input(",
+        ".split("
+      ]
+    },
+    "inputLabels": [
+      "Números con comas"
+    ]
+  },
+  {
+    "title": "Solo los pares",
+    "topic": "Filtrar una lista",
+    "level": "Avanzado",
+    "desc": "Una lista nueva puede guardar solo los valores que cumplen una condición.",
+    "goal": "Pide números separados por comas. Muestra solo los pares, también separados por comas y sin espacios. Si no hay, muestra Ninguno.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Una lista nueva puede guardar solo los valores que cumplen una condición.",
+      "syntax": "resultado = []\nfor n in numeros:\n    if condicion:\n        resultado.append(n)",
+      "example": "edades = [8, 11, 14]\nmayores = []\nfor edad in edades:\n    if edad > 10:\n        mayores.append(edad)",
+      "why": "Con join() puedes unir textos en una sola línea separados por comas.",
+      "steps": [
+        "Separa la entrada en números.",
+        "Recorre y conserva solo los pares.",
+        "Une los pares con comas o muestra Ninguno."
+      ]
+    },
+    "hint": "Para unir usa \",\".join(...), convirtiendo los números en texto.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "1,2,3,4"
+          ],
+          "output": "2,4"
+        },
+        {
+          "inputs": [
+            "7,9"
+          ],
+          "output": "Ninguno"
+        },
+        {
+          "inputs": [
+            "0,-2,5"
+          ],
+          "output": "0,-2"
+        }
+      ],
+      "requires": [
+        "input(",
+        "for "
+      ]
+    },
+    "inputLabels": [
+      "Números con comas"
+    ]
+  },
+  {
+    "title": "Suma los pares",
+    "topic": "Acumuladores",
+    "level": "Avanzado",
+    "desc": "Un acumulador comienza en cero y va sumando números.",
+    "goal": "Pide un entero positivo n. Suma todos los pares entre 1 y n y muestra el resultado.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Un acumulador comienza en cero y va sumando números.",
+      "syntax": "suma = 0\nfor numero in valores:\n    suma = suma + numero",
+      "example": "total = 0\nfor numero in [3, 2]:\n    total += numero\nprint(total)",
+      "why": "Usa el resto % 2 para decidir si agregas un valor al total.",
+      "steps": [
+        "Pide n con int(input()).",
+        "Recorre los valores desde 1 hasta n.",
+        "Acumula solo los pares y muestra la suma."
+      ]
+    },
+    "hint": "Recuerda iniciar la suma en cero.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "6"
+          ],
+          "output": "12"
+        },
+        {
+          "inputs": [
+            "7"
+          ],
+          "output": "12"
+        },
+        {
+          "inputs": [
+            "1"
+          ],
+          "output": "0"
+        },
+        {
+          "inputs": [
+            "10"
+          ],
+          "output": "30"
+        }
+      ],
+      "requires": [
+        "input(",
+        "for "
+      ]
+    },
+    "inputLabels": [
+      "Número n"
+    ]
+  },
+  {
+    "title": "Factorial espacial",
+    "topic": "Productos acumulados",
+    "level": "Avanzado",
+    "desc": "El factorial multiplica 1 × 2 × 3 ... × n.",
+    "goal": "Pide un entero n igual o mayor que 0 y muestra n! (factorial). Recuerda: 0! = 1.",
+    "starter": "print()",
+    "learn": {
+      "intro": "El factorial multiplica 1 × 2 × 3 ... × n.",
+      "syntax": "producto = 1\nfor i in range(1, limite):\n    producto *= i",
+      "example": "multiplicacion = 1\nfor i in [2, 3]:\n    multiplicacion *= i\nprint(multiplicacion)",
+      "why": "Para productos acumulados empiezas en 1, no en cero.",
+      "steps": [
+        "Pide un entero no negativo.",
+        "Multiplica los valores de 1 a n.",
+        "Muestra el resultado; para cero debe salir 1."
+      ]
+    },
+    "hint": "Usa un acumulador que comience con valor 1.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "0"
+          ],
+          "output": "1"
+        },
+        {
+          "inputs": [
+            "1"
+          ],
+          "output": "1"
+        },
+        {
+          "inputs": [
+            "5"
+          ],
+          "output": "120"
+        },
+        {
+          "inputs": [
+            "6"
+          ],
+          "output": "720"
+        }
+      ],
+      "requires": [
+        "input(",
+        "for "
+      ]
+    },
+    "inputLabels": [
+      "Número n"
+    ]
+  },
+  {
+    "title": "Mi función saludadora",
+    "topic": "def y parámetros",
+    "level": "Avanzado",
+    "desc": "def crea una función. Los paréntesis contienen los datos que recibe.",
+    "goal": "Pide un nombre y úsalo en una función saludar(nombre) que imprima Hola seguido del nombre. Llama a la función.",
+    "starter": "print()",
+    "learn": {
+      "intro": "def crea una función. Los paréntesis contienen los datos que recibe.",
+      "syntax": "def presentar(cosa):\n    print(\"Esto es\", cosa)\npresentar(\"un cohete\")",
+      "example": "def repetir(x):\n    print(x)\nrepetir(\"Vamos\")",
+      "why": "La función no se ejecuta hasta que la llamas por su nombre.",
+      "steps": [
+        "Define saludar(nombre).",
+        "Dentro muestra Hola y el nombre.",
+        "Pide el nombre y llama la función."
+      ]
+    },
+    "hint": "Después de definir saludar, recuerda llamarla.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "Ana"
+          ],
+          "output": "Hola Ana"
+        },
+        {
+          "inputs": [
+            "Leo"
+          ],
+          "output": "Hola Leo"
+        },
+        {
+          "inputs": [
+            "Robot"
+          ],
+          "output": "Hola Robot"
+        }
+      ],
+      "requires": [
+        "input(",
+        "def ",
+        "saludar"
+      ]
+    },
+    "inputLabels": [
+      "Nombre"
+    ]
+  },
+  {
+    "title": "Función que devuelve",
+    "topic": "return",
+    "level": "Avanzado",
+    "desc": "return devuelve un dato de la función, para usarlo fuera de ella.",
+    "goal": "Pide un entero y crea cuadrado(n) que devuelva n × n usando return. Muestra el resultado.",
+    "starter": "print()",
+    "learn": {
+      "intro": "return devuelve un dato de la función, para usarlo fuera de ella.",
+      "syntax": "def triple(n):\n    return n * 3\nprint(triple(2))",
+      "example": "def sumar_uno(x):\n    return x + 1\nprint(sumar_uno(4))",
+      "why": "print muestra el resultado; return permite reutilizarlo.",
+      "steps": [
+        "Define cuadrado(n).",
+        "Dentro devuelve n multiplicado por sí mismo.",
+        "Pide el número y muestra el valor devuelto."
+      ]
+    },
+    "hint": "Escribe return dentro de la función, no solo print.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "3"
+          ],
+          "output": "9"
+        },
+        {
+          "inputs": [
+            "-4"
+          ],
+          "output": "16"
+        },
+        {
+          "inputs": [
+            "0"
+          ],
+          "output": "0"
+        }
+      ],
+      "requires": [
+        "input(",
+        "def ",
+        "return"
+      ]
+    },
+    "inputLabels": [
+      "Número"
+    ]
+  },
+  {
+    "title": "Tu contraseña",
+    "topic": "Reglas combinadas",
+    "level": "Avanzado",
+    "desc": "Puedes combinar condiciones: len() cuenta, isalpha() detecta letras, isdigit() detecta números.",
+    "goal": "Pide una contraseña. Si tiene al menos 8 caracteres, una letra y un número, muestra Segura; si no, Insegura.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Puedes combinar condiciones: len() cuenta, isalpha() detecta letras, isdigit() detecta números.",
+      "syntax": "tiene_digito = any(c.isdigit() for c in texto)",
+      "example": "mensaje = \"abc7\"\nprint(any(c.isdigit() for c in mensaje))",
+      "why": "any() se vuelve verdadero si al menos uno de los caracteres cumple la regla.",
+      "steps": [
+        "Pide una contraseña.",
+        "Comprueba longitud, letra y número.",
+        "Muestra Segura o Insegura."
+      ]
+    },
+    "hint": "Prueba len(), isalpha() e isdigit().",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "clave123"
+          ],
+          "output": "Segura"
+        },
+        {
+          "inputs": [
+            "abcdefghi"
+          ],
+          "output": "Insegura"
+        },
+        {
+          "inputs": [
+            "123456789"
+          ],
+          "output": "Insegura"
+        },
+        {
+          "inputs": [
+            "a1"
+          ],
+          "output": "Insegura"
+        },
+        {
+          "inputs": [
+            "Robot2026"
+          ],
+          "output": "Segura"
+        }
+      ],
+      "requires": [
+        "input(",
+        "len("
+      ]
+    },
+    "inputLabels": [
+      "Contraseña"
+    ]
+  },
+  {
+    "title": "Agenda de exploradores",
+    "topic": "Diccionarios",
+    "level": "Avanzado",
+    "desc": "Los diccionarios guardan valores por una clave.",
+    "goal": "Crea un diccionario con Ana:123 y Luis:456. Pide un nombre y muestra su número. Si no existe, muestra No encontrado.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Los diccionarios guardan valores por una clave.",
+      "syntax": "colores = {\"rojo\": \"#f00\", \"azul\": \"#00f\"}\nprint(colores.get(\"rojo\", \"No existe\"))",
+      "example": "capitales = {\"Francia\": \"París\"}\nprint(capitales.get(\"Francia\"))",
+      "why": "get() te permite buscar una clave y dar un valor si no existe.",
+      "steps": [
+        "Crea el diccionario con los dos contactos.",
+        "Pide el nombre a buscar.",
+        "Muestra su número o No encontrado."
+      ]
+    },
+    "hint": "Con agenda.get(nombre, \"No encontrado\") puedes buscar sin fallar.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "Ana"
+          ],
+          "output": "123"
+        },
+        {
+          "inputs": [
+            "Luis"
+          ],
+          "output": "456"
+        },
+        {
+          "inputs": [
+            "Eva"
+          ],
+          "output": "No encontrado"
+        }
+      ],
+      "requires": [
+        "input(",
+        "{"
+      ]
+    },
+    "inputLabels": [
+      "Nombre a buscar"
+    ]
+  },
+  {
+    "title": "Sin repetidos",
+    "topic": "Listas y conjuntos",
+    "level": "Avanzado",
+    "desc": "Puedes recorrer una lista y guardar un elemento solo si todavía no aparece.",
+    "goal": "Pide números separados por comas. Elimina los repetidos conservando su primer orden. Muéstralos separados por comas, sin espacios.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Puedes recorrer una lista y guardar un elemento solo si todavía no aparece.",
+      "syntax": "unicos = []\nfor item in valores:\n    if item not in unicos:\n        unicos.append(item)",
+      "example": "palabras = [\"a\", \"b\", \"a\"]\nresultado = []\nfor palabra in palabras:\n    if palabra not in resultado:\n        resultado.append(palabra)",
+      "why": "Un set() evita duplicados, pero no conviene usarlo si necesitas mantener el orden original.",
+      "steps": [
+        "Divide los números por comas.",
+        "Recorre y guarda solo la primera aparición.",
+        "Une el resultado con comas."
+      ]
+    },
+    "hint": "Antes de agregar un número, comprueba si ya está guardado.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "1,3,1,2"
+          ],
+          "output": "1,3,2"
+        },
+        {
+          "inputs": [
+            "5,5,5"
+          ],
+          "output": "5"
+        },
+        {
+          "inputs": [
+            "4,-1,4,0,-1"
+          ],
+          "output": "4,-1,0"
+        }
+      ],
+      "requires": [
+        "input(",
+        "for "
+      ]
+    },
+    "inputLabels": [
+      "Números con comas"
+    ]
+  },
+  {
+    "title": "Cuenta las palabras",
+    "topic": "split() y len()",
+    "level": "Avanzado",
+    "desc": "split() sin argumentos separa por cualquier cantidad de espacios.",
+    "goal": "Pide una frase y muestra cuántas palabras contiene, aunque tenga espacios repetidos.",
+    "starter": "print()",
+    "learn": {
+      "intro": "split() sin argumentos separa por cualquier cantidad de espacios.",
+      "syntax": "partes = frase.split()\nprint(len(partes))",
+      "example": "saludo = \"hola a todos\"\nprint(saludo.split())",
+      "why": "len() cuenta los elementos de la lista que crea split().",
+      "steps": [
+        "Pide una frase.",
+        "Sepárala en palabras con split().",
+        "Cuenta cuántas hay."
+      ]
+    },
+    "hint": "Usa split() sin comas dentro.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "Hola mundo"
+          ],
+          "output": "2"
+        },
+        {
+          "inputs": [
+            "un  dos   tres"
+          ],
+          "output": "3"
+        },
+        {
+          "inputs": [
+            "Python"
+          ],
+          "output": "1"
+        }
+      ],
+      "requires": [
+        "input(",
+        ".split("
+      ]
+    },
+    "inputLabels": [
+      "Frase"
+    ]
+  },
+  {
+    "title": "¿Es primo?",
+    "topic": "Divisores",
+    "level": "Avanzado",
+    "desc": "Un primo es mayor que 1 y solo se divide exactamente entre 1 y él mismo.",
+    "goal": "Pide un entero n. Muestra Primo si es primo y No primo en caso contrario.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Un primo es mayor que 1 y solo se divide exactamente entre 1 y él mismo.",
+      "syntax": "if numero % divisor == 0:\n    print(\"Es divisible\")",
+      "example": "n = 9\nprint(n % 3 == 0)",
+      "why": "El operador % obtiene el resto. Un divisor que da resto 0 es exacto.",
+      "steps": [
+        "Pide el número n.",
+        "Descarta números menores que 2.",
+        "Busca divisores entre 2 y n-1 y muestra el mensaje."
+      ]
+    },
+    "hint": "Para n > 1, busca si otro número lo divide exactamente.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "2"
+          ],
+          "output": "Primo"
+        },
+        {
+          "inputs": [
+            "13"
+          ],
+          "output": "Primo"
+        },
+        {
+          "inputs": [
+            "9"
+          ],
+          "output": "No primo"
+        },
+        {
+          "inputs": [
+            "1"
+          ],
+          "output": "No primo"
+        },
+        {
+          "inputs": [
+            "21"
+          ],
+          "output": "No primo"
+        }
+      ],
+      "requires": [
+        "input(",
+        "if "
+      ]
+    },
+    "inputLabels": [
+      "Número n"
+    ]
+  },
+  {
+    "title": "Tu cajero virtual",
+    "topic": "Condiciones y dinero",
+    "level": "Avanzado",
+    "desc": "Antes de modificar dinero, verifica que el número sea válido y que alcance.",
+    "goal": "Pide saldo y cantidad a retirar. Si retirar es menor o igual que cero, muestra Operación no válida. Si no alcanza, Fondos insuficientes. Si alcanza, muestra el saldo que queda.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Antes de modificar dinero, verifica que el número sea válido y que alcance.",
+      "syntax": "if cantidad <= 0:\n    print(\"Cantidad incorrecta\")\nelif cantidad > disponible:\n    print(\"No alcanza\")\nelse:\n    print(disponible - cantidad)",
+      "example": "vidas = 4\nuso = 1\nif uso > vidas:\n    print(\"Sin vidas\")\nelse:\n    print(vidas - uso)",
+      "why": "elif sirve para revisar una segunda condición cuando falla la primera.",
+      "steps": [
+        "Pide el saldo y el retiro como números.",
+        "Comprueba cantidad positiva y fondos suficientes.",
+        "Muestra el aviso o el nuevo saldo."
+      ]
+    },
+    "hint": "Primero comprueba si el retiro es válido; después si alcanza.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "100",
+            "30"
+          ],
+          "output": "70"
+        },
+        {
+          "inputs": [
+            "20",
+            "50"
+          ],
+          "output": "Fondos insuficientes"
+        },
+        {
+          "inputs": [
+            "100",
+            "0"
+          ],
+          "output": "Operación no válida"
+        },
+        {
+          "inputs": [
+            "100",
+            "-3"
+          ],
+          "output": "Operación no válida"
+        },
+        {
+          "inputs": [
+            "10",
+            "10"
+          ],
+          "output": "0"
+        }
+      ],
+      "requires": [
+        "input(",
+        "if "
+      ]
+    },
+    "inputLabels": [
+      "Saldo",
+      "Retiro"
+    ]
+  },
+  {
+    "title": "Proyecto final: tienda espacial",
+    "topic": "Listas, if y formato",
+    "level": "Avanzado",
+    "desc": "Un programa completo puede combinar entrada de datos, listas, cálculos, condiciones y formato.",
+    "goal": "Pide precios separados por comas y un cupón SI o NO. Suma precios; si el cupón es SI, descuenta 10%. Si el total después del descuento es menor que 100, suma 15 de envío. Muestra Total: y el precio final con 2 decimales.",
+    "starter": "print()",
+    "learn": {
+      "intro": "Un programa completo puede combinar entrada de datos, listas, cálculos, condiciones y formato.",
+      "syntax": "subtotal = sum(precios)\nif descuento:\n    subtotal *= 0.9\nprint(f\"Resultado: {subtotal:.2f}\")",
+      "example": "precio = 20.0\nif precio < 50:\n    precio += 5\nprint(f\"Pago: {precio:.2f}\")",
+      "why": "Cada parte tiene un objetivo: leer precios, calcular subtotal, aplicar descuento, añadir envío y mostrar el total.",
+      "steps": [
+        "Pide precios y cupón; convierte los precios a números.",
+        "Suma, aplica el 10% de descuento si corresponde y luego evalúa el envío.",
+        "Muestra Total: con exactamente dos decimales."
+      ]
+    },
+    "hint": "El envío se decide DESPUÉS de aplicar el descuento, no antes.",
+    "check": {
+      "type": "cases",
+      "cases": [
+        {
+          "inputs": [
+            "20,30",
+            "NO"
+          ],
+          "output": "Total: 65.00"
+        },
+        {
+          "inputs": [
+            "100,50",
+            "SI"
+          ],
+          "output": "Total: 135.00"
+        },
+        {
+          "inputs": [
+            "40,60",
+            "SI"
+          ],
+          "output": "Total: 105.00"
+        },
+        {
+          "inputs": [
+            "100",
+            "NO"
+          ],
+          "output": "Total: 100.00"
+        },
+        {
+          "inputs": [
+            "10,20,30",
+            "SI"
+          ],
+          "output": "Total: 69.00"
+        }
+      ],
+      "requires": [
+        "input(",
+        "if "
+      ]
+    },
+    "inputLabels": [
+      "Precios con comas",
+      "Cupón (SI/NO)"
+    ]
+  }
+];
+
+export const tiers = [
+  {
+    "name": "Básico",
+    "color": "#56ccf2",
+    "desc": "10 misiones fáciles: mensajes, números y variables",
+    "range": [
+      0,
+      9
+    ]
+  },
+  {
+    "name": "Intermedio",
+    "color": "#a58bff",
+    "desc": "10 misiones: datos, decisiones, ciclos y listas",
+    "range": [
+      10,
+      19
+    ]
+  },
+  {
+    "name": "Avanzado",
+    "color": "#ffbc66",
+    "desc": "20 desafíos: funciones, algoritmos y proyectos reales",
+    "range": [
+      20,
+      39
+    ]
+  }
+];
